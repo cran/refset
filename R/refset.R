@@ -1,12 +1,24 @@
 
+
+#' Subsets with Reference Semantics
+#'
+#' Refset provides subsets with reference semantics, i.e. subsets
+#' which automatically reflect changes in the original object, and which
+#' also update the original object when they are changed.
+#' 
+#' For more info see \code{vignette('refset')}.
+#' @name refset-package
+#' @docType package
+#' @title Subsets with Reference Semantics
+#' @author David Hugh-Jones \email{davidhughjones@@gmail.com}
+#' @keywords package
+NULL
+
 # TODO/IDEAS:
 
 "
 Should I make rs %r% dfr or refset(rs, dfr) work without extra commas?
 If so, it has to take the real semantics of dfr, not dfr[] ...
-
-BUG:
-weird failures in tests from testthat...
 "
 
 #' Create a reference to a subset of an object
